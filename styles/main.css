@@ -1,0 +1,25 @@
+main > section{
+    margin-top: 65px;
+}
+section:nth-child(3) ul li {
+    width: 47.5%;
+    background-color: var(--color-grey-8);
+    border-radius: var(--radius-1);
+    overflow: hidden;
+    transition: var(--animation-duration-1) var(--animation-type);
+}
+section:nth-child(3) ul li:hover{
+    background-color: var(--color-grey-6);
+}
+section:nth-child(3) ul li div{
+    overflow: hidden;
+}
+section:nth-child(3) ul li div img{
+    width: 100%;
+    transition: var(--animation-duration-1) var(--animation-type);
+}section:nth-child(3) ul li div img:hover{
+    transform: scale(1.1);
+}
+section:nth-child(3) ul li div:nth-child(2){
+    padding: 20px 16px;
+}

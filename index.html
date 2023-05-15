@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/reset.css"/>
+    <link rel="stylesheet" href="./styles/globalStyles.css"/>
+    <link rel="stylesheet" href="./styles/positioning.css"/>
+    <link rel="stylesheet" href="./styles/texts.css"/>
+    <link rel="stylesheet" href="./styles/display.css"/>
+    <link rel="stylesheet" href="./styles/buttons.css"/>
+    <link rel="stylesheet" href="./styles/inputs.css"/>
+    <link rel="stylesheet" href="./styles/header.css"/>
+    <link rel="stylesheet" href="./styles/main.css"/>
+    
+    <link rel="stylesheet" href="./pages/home/index.css" />
+    <link rel="shortcut icon" href="https://kenzie.com.br/favicon.jpeg" type="image/x-icon">
+    <title>Open Music</title>
+  </head>
+  <body>
+    <header class="container display__flex justify__S-B align__itens-center">
+      <h1 class="title1">Open music</h1>
+      <button id="darkModeButton" class="button__darkmode display__flex">
+        <img src="../../assets/img/moon.svg" alt="">
+      </button>
+    </header>
+    
+    <main class="container">
+      <section>
+        <h2 class="title2 mb1">Gênero Musical</h2>
+
+        <ul id="listButtons" class="display__flex gap30 flex__wrap-wrap">
+          <li class="button__filters text1 button__activeted">Todos</li>
+          <li class="button__filters text1">Pop</li>
+          <li class="button__filters text1">MPB</li>
+          <li class="button__filters text1">Forró</li>
+          <li class="button__filters text1">Samba</li>
+          <li class="button__filters text1">Baião</li>
+          <li class="button__filters text1">Rap</li>
+          <li class="button__filters text1">Hip-Hop</li>
+          <li class="button__filters text1">Rock</li>
+          <li class="button__filters text1">Reggae</li>
+          <li class="button__filters text1">Country</li>
+          <li class="button__filters text1">Gospel</li>
+        </ul>
+      </section>
+
+      <section>
+        <div class="display__flex justify__S-B">
+          <h2 class="title2 mb1">Difinir preço</h2>
+          <p id="valueFiltered" class="text4">Até R$ 0.00</p>
+        </div>
+
+        <div class="display__flex">
+          <input type="range" id="inputRange" min="0" max="1000" value="0">
+        </div>
+      </section>
+
+      <section>
+        <h2 class="title2 mb2">Albums encontrado</h2>
+        <div>
+          <ul id="renderMusical" class="display__flex gap30 flex__wrap-wrap justify__S-B mb2" >
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    
+    <script src="./pages/home/productsData.js"></script>
+    <script src="./scripts/theme.js"></script>
+    <script src="./scripts/darkmode.js"></script>
+    <script src="./scripts/filters.js"></script>
+    <script src="./scripts/render.js"></script>
+    <script src="./pages/home/index.js"></script>
+  </body>
+</html>

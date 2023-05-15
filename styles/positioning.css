@@ -1,0 +1,29 @@
+.justify__S-B{
+    justify-content: space-between;
+}
+.align__itens-center{
+    align-items: center;
+}
+
+
+.gap25{
+    gap: 25px;
+}
+.gap30{
+    gap: 30px;
+}
+
+
+.flex__wrap-wrap{
+    flex-wrap: wrap;
+}
+.flex__direction-column{
+    flex-direction: column;
+}
+
+.mb1{
+    margin-bottom: 24px;
+}
+.mb2{
+    margin-bottom: 60px;
+}

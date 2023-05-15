@@ -1,0 +1,31 @@
+.button__darkmode{
+    padding: 9px 10px;
+    border: none;
+    border-radius: var(--radius-1);
+    cursor: var(--pointer);
+    background-color: var(--color-grey-7);
+    transition: var(--animation-duration-1) var(--animation-type);
+}
+.button__darkmode:hover{
+    background-color: var(--color-grey-6);
+}
+
+
+.button__filters, .button__filters-buy{
+    padding: 12px 8px;
+    background-color: var(--color-grey-7);
+    border-radius: var(--radius-1);
+    cursor: var(--pointer);
+    transition: var(--animation-duration-1) var(--animation-type);
+}
+.button__filters-buy:hover{
+    background-color: var(--color-grey-8);
+}
+.button__filters:hover{
+    background-color: var(--color-grey-6);
+}
+
+.button__activeted{
+    background-color: var(--color-grey-2);
+    color: var(--color-grey-9);
+}
